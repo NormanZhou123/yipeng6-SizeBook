@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="size1">Name:</string>
+    <string name="size2">Date:</string>
+    <string name="size3">Neck:</string>
+    <string name="size4">Bust:</string>
+    <string name="size5">Chest:</string>
+    <string name="size6">Waist:</string>
+    <string name="size7">Hip:</string>
+    <string name="size8">Inseam:</string>
+    <string name="size9">Comments:</string>
+
+    <string name="hello">Neck:</string>
+    <string name="app_name">TheSizeBook</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="add">Add</string>
+
+</resources>

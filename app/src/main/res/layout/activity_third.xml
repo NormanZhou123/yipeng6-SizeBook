@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/activity_edit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ebody1"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:hint="Name:"
+                android:layout_height="51dp" />
+
+            <EditText
+                android:id="@+id/ebody2"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:hint="Date:"
+                android:layout_height="51dp"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/ebody3"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:hint="Neck:"
+                android:layout_height="51dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/ebody4"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:hint="Bust:"
+                android:layout_height="51dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/ebody5"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:hint="Chest:"
+                android:layout_height="51dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/ebody6"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:hint="Waist:"
+                android:layout_height="51dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/ebody7"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:hint="Hip:"
+                android:layout_height="51dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/ebody8"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:hint="Inseam:"
+                android:layout_height="51dp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/ebody9"
+                android:layout_width="match_parent"
+                android:scrollbars="horizontal"
+                android:hint="Comment:"
+                android:layout_height="51dp" />
+
+
+            <Button
+                android:id="@+id/esaveBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
