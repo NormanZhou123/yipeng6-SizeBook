@@ -75,10 +75,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        int position = info.position;
         if (item.getTitle().equals("Edit")) {
             Toast.makeText(this, "Editing", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(MainActivity.this, EditActivity.class);
-            i.putExtra("MyClass", TheSizes.get(LongClickedItemIndex));
+            i.putExtra("MyClass", position);
             startActivity(i);
         }
         else if (item.getTitle() == "Delete") {

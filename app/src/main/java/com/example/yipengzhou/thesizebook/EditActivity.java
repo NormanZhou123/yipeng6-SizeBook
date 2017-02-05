@@ -10,10 +10,15 @@ import android.widget.Toast;
 
 public class EditActivity extends MainActivity {
 
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
+
+        Intent intent = getIntent();
+        final int current_pos = intent.getIntExtra("MyClass", 0);
+
         nameTxt = (EditText) findViewById(R.id.ebody1);
         dateTxt = (EditText) findViewById(R.id.ebody2);
         neckTxt = (EditText) findViewById(R.id.ebody3);
@@ -37,7 +42,7 @@ public class EditActivity extends MainActivity {
                 String hip = hipTxt.getText().toString();
                 String inseam = inseamTxt.getText().toString();
                 String comment = commentTxt.getText().toString();
-                TheSizes.set(LongClickedItemIndex, new TheSize(name, date, neck, bust, chest,
+                TheSizes.set(current_pos, new TheSize(name, date, neck, bust, chest,
                         waist, hip, inseam, comment));
                 Toast.makeText(getApplicationContext(), nameTxt.getText().toString() +
                         " has been changed!", Toast.LENGTH_SHORT).show();
