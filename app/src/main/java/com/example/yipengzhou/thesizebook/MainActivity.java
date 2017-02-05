@@ -30,6 +30,16 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/*
+* This is the main class of the app. It has an add button which can allow user to add the
+* information that they want to save. The information will be shown in the list view in the
+* main activity. And it has a context menu for each item in the list view, the context menu will
+* be shown if a long click is implemented on the item. The context menu has two buttons which are
+* edit and delete, they allow user to either edit the info of the item they saved or delete the
+* item in the list view.
+*/
+
 public class MainActivity extends AppCompatActivity {
 
     EditText nameTxt, dateTxt, neckTxt, bustTxt, chestTxt, waistTxt,
@@ -95,6 +105,12 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+
+
+    /*
+    * This class is the adapter for the list view of sizes, it will be called when there is any
+    * change to the list view, i.e deleting or adding.
+    */
 
     public class TheSizeListAdapter extends ArrayAdapter<TheSize>{
         public TheSizeListAdapter(){

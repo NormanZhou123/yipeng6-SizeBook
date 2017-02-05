@@ -31,6 +31,14 @@ import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+
+/*
+* This class is the second activity of the app, it allows user to input the info they want to
+* save and save the info into a file called FILE.sav. This activity will be activated when the
+* add button in the main activity is clicked. It has a save button, when the user click this button
+* the info which were input by the user will be saved.
+*/
+
 public class SecondActivity extends MainActivity {
 
     @Override

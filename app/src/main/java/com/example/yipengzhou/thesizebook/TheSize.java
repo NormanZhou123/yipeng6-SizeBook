@@ -2,9 +2,11 @@ package com.example.yipengzhou.thesizebook;
 
 import java.io.Serializable;
 
-/**
- * Created by yipengzhou on 2017/1/31.
- */
+
+/*
+* This class defines some strings for the activities. By using getString(), we can get the
+* content of the input in the SecondActicity and EditActivity.*/
+
 
 public class TheSize implements Serializable {
 

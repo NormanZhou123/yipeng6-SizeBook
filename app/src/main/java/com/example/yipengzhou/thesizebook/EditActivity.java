@@ -8,6 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
+/*
+* This class is the edit activity of the app. It allows user to edit the info of the items in the
+* list view. Part of the code of this class is the same with the SecondActivity, they have the
+* same layout. But when the user click edit to activate this activity, the info in the item will
+* be shown in the text box so that the user can view the details of the item and make change to
+* it. */
+
 public class EditActivity extends MainActivity {
 
 
